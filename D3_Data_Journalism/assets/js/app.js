@@ -201,7 +201,7 @@ d3.csv("assets/data/data.csv").then((censusData, err) => {
         .classed("stateCircle", true)
         .attr("cx", d => xLinearScale(d[chosenXAxis]))
         .attr("cy", d => yLinearScale(d[chosenYAxis]))
-        .attr("r", 12)
+        .attr("r", 11)
         .attr("opacity", "0.75");
     
     // After appending circles, in the same place,
@@ -212,7 +212,7 @@ d3.csv("assets/data/data.csv").then((censusData, err) => {
         .attr("y", d => yLinearScale(d[chosenYAxis]))
         .attr("dy", "0.35em")
         .text(d => d.abbr)
-        .style("font-size", "12px")
+        .style("font-size", "11px")
         .style("text-anchor", "middle");
         
     
