@@ -1,4 +1,5 @@
-var svgWidth = 960;
+// initiation of page size
+var svgWidth = 820;
 var svgHeight = 600;
 
 var margin = {
@@ -122,18 +123,24 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
         yLabel = "Obesity: "
     }
 
+    // create tooltip on the selection of states
     var toolTip = d3.tip()
         .attr("class", "d3-tip")
         .offset([-8, 0])
         .html(function (d) {
+            // setting format for rates and income
             if (chosenXAxis === "poverty") {
                 return (`${d.state}<br>${xLabel} ${d[chosenXAxis]}%<br>${yLabel} ${d[chosenYAxis]}%`);
+            }
+            else if (chosenXAxis === "income") {
+                return (`${d.state}<br>${xLabel} $${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}%`);
             }
             else {
                 return (`${d.state}<br>${xLabel} ${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}%`);
             }
         });
 
+    // call toop tip function by the mouse 
     circlesGroup.call(toolTip);
 
     circlesGroup.on("mouseover", function (data) {

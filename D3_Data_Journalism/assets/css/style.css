@@ -29,3 +29,20 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
+/* Customized css */
+.body { 
+  padding-top: 90px; 
+}
+
+.navbar-light {
+  background-color: #89bdd3;
+}
+
+@media (max-width: 768px) {
+  nav.navbar-expand-md.navbar-light.fixed-top.border-bottom.shadow.p-3.mb-5 {
+      color: white;
+      background-color: #ffa175;
+  }
+
+}
