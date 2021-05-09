@@ -1,5 +1,5 @@
-# D3-Challenge
-With the use of D3.js. this project analyzes the current trends shaping people's lives, as well as creates charts, graphs, and interactive elements to help readers understand the findings.
+# Visualization of Demographics in USA with D3.js
+With the use of D3.js. this project analyzes the current trends shaping people's lives, as well as creates charts, graphs, and interactive elements to help readers understand the findings. Each circle represents individual American state.
 
 The data set included with the assignment is based on 2014 ACS 1-year estimates from the US Census Bureau, which includes data on rates of income, obesity, poverty, etc. by state.
 
